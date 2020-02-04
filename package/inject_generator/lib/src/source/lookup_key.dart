@@ -34,7 +34,7 @@ class LookupKey {
   /// A human-readable representation of the dart Symbol of this type.
   String toPrettyString() {
     final qualifierString =
-        qualifier.transform((symbolPath) => '@${symbolPath.symbol} ').or('');
+        qualifier.isNotPresent ? '' : '@${qualifier.value.symbol} ';
     return '$qualifierString${root.symbol}';
   }
 
