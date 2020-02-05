@@ -10,7 +10,7 @@ environment:
   sdk: ">=2.1.0 <3.0.0"
 
 dependencies:
-  analyzer: ^0.26.4
+  analyzer:
   build:
   code_builder:
   collection:
